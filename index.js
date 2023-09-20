@@ -46,8 +46,11 @@ document.querySelector('form').addEventListener('submit', function(e){
 var parquePatricios = L.marker([-34.6386641858029, -58.40669453144074]).bindPopup('Este es parque patricios')
 var plazaIrlanda = L.marker([-34.61463753119003, -58.457779884338386]).bindPopup('Este es plaza irlanda')
 
+// almacena las plazas 
 var plazas = L.layerGroup([parquePatricios, plazaIrlanda])
 
+// crea el overlay
 var layerControl = L.control.layers().addTo(map)
 
+// agrega las plazas al overlay
 layerControl.addOverlay(plazas, "Plazas")
