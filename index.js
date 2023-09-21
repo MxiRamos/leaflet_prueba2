@@ -50,9 +50,10 @@ var parquePatricios = L.marker([-34.6386641858029, -58.40669453144074]).bindPopu
 var plazaIrlanda = L.marker([-34.61463753119003, -58.457779884338386]).bindPopup('Este es plaza irlanda')
 var plazaDelAngelGris = L.marker([-34.62208066696025, -58.45654875040055]).bindPopup("Esta es la plaza del angel gris")
 var parqueRivadavia = L.marker([-34.61797158726397, -58.43324840068818]).bindPopup("Este es parque rivadavia")
+var plazaDeMayo = L.marker([-34.608429992984, -58.372134268283844])
 
 // almacena las plazas 
-var plazas = L.layerGroup([parquePatricios, plazaIrlanda, plazaDelAngelGris, parqueRivadavia])
+var plazas = L.layerGroup([parquePatricios, plazaIrlanda, plazaDelAngelGris, parqueRivadavia, plazaDeMayo])
 
 // crea el overlay
 var layerControl = L.control.layers().addTo(map)
